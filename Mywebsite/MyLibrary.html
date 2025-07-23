@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookNest - Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-title"></div>
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/open-book--v2.png" alt="My Library Logo" style="height:38px;vertical-align:middle;margin-right:10px;">
+                <span style="font-size:2.1rem;font-weight:700;letter-spacing:2px;">My Library</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#free-books" class="nav-link">Free Books</a>
+                <a href="#paid-books" class="nav-link">Paid Books</a>
+                <a href="#" class="nav-link">My Library</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+        </div>
+        <div class="header-content">
+            <p class="subtitle">
+                Explore our vast collection of free and paid books. Discover classics, bestsellers, and exclusive titles for every reader.
+            </p>
+            <div class="header-actions">
+                <a href="#free-books" class="header-btn free-btn">Explore Free Books</a>
+                <a href="#paid-books" class="header-btn paid-btn">Browse Paid Books</a>
+            </div>
+            <p class="tagline">Your Digital Library - Read eBooks Anywhere, Anytime</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search books or authors...">
+            <button onclick="searchBooks()">
+                <span style="vertical-align:middle;">🔍</span> Search
+            </button>
+        </div>
+        <div class="filters">
+            <select id="sortSelect" onchange="sortBooks()">
+                <option value="">Sort By</option>
+                <option value="title">Title (A-Z)</option>
+                <option value="author">Author (A-Z)</option>
+            </select>
+            <label style="margin-left:16px;">
+                <input type="checkbox" id="freeOnly" onchange="filterBooks()"> Free Only
+            </label>
+        </div>
+        <div class="books-grid" id="booksGrid">
+            <!-- Book cards will be rendered here -->
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="footer-social"></div>
+                <a href="#" title="Twitter" aria-label="Twitter"><img src="https://img.icons8.com/ios-filled/20/4b6cb7/twitter.png" alt="Twitter"></a>
+                <a href="#" title="Facebook" aria-label="Facebook"><img src="https://img.icons8.com/ios-filled/20/4b6cb7/facebook-new.png" alt="Facebook"></a>
+                <a href="#" title="Instagram" aria-label="Instagram"><img src="https://img.icons8.com/ios-filled/20/4b6cb7/instagram-new.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div style="margin-top:10px;font-size:0.97rem;">&copy; 2024 BookNest. All rights reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+    

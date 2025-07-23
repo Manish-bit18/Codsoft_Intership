@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+
+
+}
+
+.navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.997);
+  height: 30px;
+  position: fixed;
+  width: 100%;
+
+}
+
+.nav-lists {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-lists li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-lists li a:hover {
+  background-color: rgb(195, 46, 46);
+  height: 23px;
+  transform: scale(1.1);
+}
+
+.nav-lists li a:active {
+  color: #fdd835;
+}
+
+
+.portfolio {
+  margin-left: 20px;
+  color: white
+}
+
+section {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  scroll-snap-align: start;
+  justify-content: center;
+
+
+}
+
+
+
+#home {
+  background-image: url("img.png/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  color: aliceblue;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 200px;
+  padding-left: 200px;
+  max-width: 100%;
+}
+
+#line1 {
+  font-size: 1.5rem;
+}
+
+#line2 {
+  font-size: 4rem;
+  font-weight: bold;
+
+
+}
+
+#line3 {
+  font-size: 2rem;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: typing 2s steps(20) forwards;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes blink {
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+.line4 {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+#line4 {
+  font-size: 1.5rem;
+  margin-right: 30px;
+
+}
+
+
+#about-me {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+  gap: 40px;
+}
+
+.about-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 80px;
+  padding-bottom: 300px;
+
+
+
+}
+
+.about {
+  display: flex;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  align-items: flex-start;
+
+  font-weight: bold;
+  border-bottom: #fdd835 2px solid;
+
+}
+
+.about-image {
+  flex-shrink: 0;
+  max-width: 100%;
+
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+
+  margin-left: 20px;
+
+}
+
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.content {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  text-align: justify;
+  padding-right: 50px;
+  padding-top: 100px;
+
+}
+
+#skills {
+
+  background-color: #0D0D0D;
+
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 25px;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: 300px;
+  padding-top: 60px;
+
+
+}
+
+.skill-card {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  transition: transform 0.3s;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  align-items: center;
+
+
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card p {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 150px;
+  padding-top: 70px;
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+}
+
+#projects {
+  background-color: #1a1a1a;
+  height: 100vh;
+
+  
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+} 
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  padding-top: 50px;
+}
+
+.project-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.2em;
+  margin: 0 0 8px 0;
+}
+
+.project-desc {
+  flex: 1;
+  margin-bottom: 12px;
+  color: #555;
+  background: #f0f4fa;
+  padding: 10px 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.project-link {
+  text-decoration: none;
+  color: #fff;
+  background: #007acc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.project-link:hover {
+  background: #005fa3;
+}
+.project{
+ padding-bottom: 50px;;
+ padding-left: 150px;
+  padding-top: 70px;
+  font-size: 2.5em;
+  color: white;
+}
+
+.contact-container {
+  max-width: 500px;
+  
+  background: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+#contact{
+  background-color: #1c1c1c;
+  
+}
+
+ #contact-container {
+      max-width: 700px;
+      margin:  auto;
+      padding-top: 100px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+    }
+
+    #contact-header {
+      text-align: center;
+      color: #fbf3f3;
+    }
+
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .form-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    #submit-btn {
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #submit-btn:hover {
+      background-color: #45a049;
+    }
+ 

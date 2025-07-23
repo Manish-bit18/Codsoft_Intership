@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
+    color: #222;
+}
+
+header {
+    background: #4b6cb7;
+    background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+    color: #fff;
+    padding: 30px 0 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background: #4b6cb7;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.search-bar button:hover {
+    background: #182848;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.book-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.book-card:hover {
+    box-shadow: 0 4px 16px rgba(75, 108, 183, 0.15);
+}
+
+.book-cover {
+    width: 100px;
+    height: 140px;
+    background: #e3e6ee;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    object-fit: cover;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.book-author {
+    color: #4b6cb7;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.read-btn {
+    margin-top: auto;
+    padding: 7px 18px;
+    background: #4b6cb7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.98rem;
+    transition: background 0.2s;
+}
+
+.read-btn:hover {
+    background: #182848;
+}
+
+footer {
+    text-align: center;
+    padding: 18px 0;
+    background: #e3e6ee;
+    color: #555;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px 10px 32px;
+    background: transparent;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.main-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.08rem;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #ffd700;
+    color: #ffd700;
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 1.08rem;
+    margin: 8px 0 0 0;
+}
+
+.header-actions {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.header-btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(75, 108, 183, 0.08);
+    transition: background 0.2s, color 0.2s;
+    font-size: 1rem;
+}
+
+.free-btn {
+    background: #fff;
+    color: #4b6cb7;
+}
+
+.free-btn:hover {
+    background: #e3e6ee;
+}
+
+.paid-btn {
+    background: #ffd700;
+    color: #222;
+}
+
+.paid-btn:hover {
+    background: #ffe066;
+}
+
+.tagline {
+    margin-top: 14px;
+    font-size: 1.05rem;
+    color: #e3e6ee;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+    gap: 10px;
+}
+
+.filters select,
+.filters input[type="checkbox"] {
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: #4b6cb7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #182848;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+@media (max-width: 700px) {
+    .header-top {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px 10px 10px;
+    }
+
+    .main-nav {
+        gap: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content .header-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-title {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 0 6px 10px 6px;
+    }
+}
+
+.main-nav {
+    background: rgba(24, 40, 72, 0.10);
+    border-radius: 6px;
+    padding: 6px 18px;
+    margin-left: 18px;
+}
+
+.nav-link {
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 0 2px;
+    font-size: 1.08rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #fff;
+    color: #4b6cb7;
+    border-bottom: 2px solid #ffd700;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.book-card {
+    border: 1px solid #e3e6ee;
+    box-shadow: 0 2px 8px rgba(75, 108, 183, 0.07);
+    padding: 20px 16px 18px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #fafdff 80%, #e3e6ee 100%);
+}
+
+.book-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #182848;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #4b6cb7;
+    margin-bottom: 8px;
+}
+
+.book-cover {
+    border: 2px solid #e3e6ee;
+    box-shadow: 0 1px 4px rgba(75, 108, 183, 0.10);
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
